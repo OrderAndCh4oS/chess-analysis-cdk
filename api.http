@@ -1,9 +1,9 @@
-GET http://127.0.0.1/
+GET http://127.0.0.1:8080/
 Accept: application/json
 
 ###
 
-POST http://127.0.0.1/analyse-game
+POST http://127.0.0.1:8080/analyse-game
 Accept: application/json
 Content-Type: application/json
 
@@ -13,7 +13,7 @@ Content-Type: application/json
 
 ###
 
-POST http://127.0.0.1/analyse-position
+POST http://127.0.0.1:8080/analyse-position
 Accept: application/json
 Content-Type: application/json
 
