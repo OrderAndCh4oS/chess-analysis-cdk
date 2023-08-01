@@ -4,8 +4,8 @@
 
 ```sh
 cd src
-docker build --platform linux/amd64 -t lambdas .                                        
-docker run -p 8080:80 lambdas
+docker build --platform linux/amd64 -t app .                                        
+docker run -p 8080:80 app
 ```
 
 ## Deploy
