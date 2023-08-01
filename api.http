@@ -1,14 +1,49 @@
-GET http://127.0.0.1:8080/health-check
-Accept: *
+GET http://127.0.0.1/
+Accept: application/json
 
 ###
 
-POST http://127.0.0.1:8080/analyse-game
+POST http://127.0.0.1/analyse-game
 Accept: application/json
 Content-Type: application/json
 
 {
   "pgn": "[Event \"Live Chess - chess\"]\n[Site \"Chess.com\"]\n[Date \"2023.07.30\"]\n[Round \"?\"]\n[White \"ordernchaos\"]\n[Black \"Pssydestrya69\"]\n[Result \"1-0\"]\n[TimeControl \"60\"]\n[WhiteElo \"915\"]\n[BlackElo \"966\"]\n[Termination \"ordernchaos won by checkmate\"]\n\n1. e4 e5 2. Bc4 Bc5 3. Qh5 Qf6 4. f3 c6 5. d3 b5 6. Bb3 d5 7. exd5 cxd5 8. Bxd5\nNc6 9. Bxc6+ Qxc6 10. Qxe5+ Be6 11. Ne2 Nh6 12. Qxg7 O-O-O 13. Qxh6 Qb6 14. d4\nBxd4 15. Nxd4 Qxd4 16. Be3 Qd1+ 17. Kf2 Qxc2+ 18. Kg3 Qxb2 19. Rc1+ Bc4 20. Qc6+\nKb8 21. Bf4+ Rd6 22. Bxd6# 1-0"
+}
+
+###
+
+POST http://127.0.0.1/analyse-position
+Accept: application/json
+Content-Type: application/json
+
+{
+  "fen": "rnb1k1nr/p4ppp/5q2/1pbBp2Q/8/3P1P2/PPP3PP/RNB1K1NR b KQkq - 0 8"
+}
+
+###
+
+GET https://chess.orderandchaos.xyz/
+Accept: application/json
+
+###
+
+POST https://chess.orderandchaos.xyz/analyse-game
+Accept: application/json
+Content-Type: application/json
+
+{
+  "pgn": "[Event \"Live Chess - chess\"]\n[Site \"Chess.com\"]\n[Date \"2023.07.30\"]\n[Round \"?\"]\n[White \"ordernchaos\"]\n[Black \"Pssydestrya69\"]\n[Result \"1-0\"]\n[TimeControl \"60\"]\n[WhiteElo \"915\"]\n[BlackElo \"966\"]\n[Termination \"ordernchaos won by checkmate\"]\n\n1. e4 e5 2. Bc4 Bc5 3. Qh5 Qf6 4. f3 c6 5. d3 b5 6. Bb3 d5 7. exd5 cxd5 8. Bxd5\nNc6 9. Bxc6+ Qxc6 10. Qxe5+ Be6 11. Ne2 Nh6 12. Qxg7 O-O-O 13. Qxh6 Qb6 14. d4\nBxd4 15. Nxd4 Qxd4 16. Be3 Qd1+ 17. Kf2 Qxc2+ 18. Kg3 Qxb2 19. Rc1+ Bc4 20. Qc6+\nKb8 21. Bf4+ Rd6 22. Bxd6# 1-0"
+}
+
+###
+
+POST https://chess.orderandchaos.xyz/analyse-position
+Accept: application/json
+Content-Type: application/json
+
+{
+  "fen": "rnb1k1nr/p4ppp/5q2/1pbBp2Q/8/3P1P2/PPP3PP/RNB1K1NR b KQkq - 0 8"
 }
 
 ###

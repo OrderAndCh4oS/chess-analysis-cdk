@@ -15,7 +15,7 @@ class ItemFen(BaseModel):
     fen: str
 
 
-@app.get("/health-check")
+@app.get("/")
 def analyse_game():
     return {"message": "ok"}
 
